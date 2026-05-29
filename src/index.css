@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  
+  --color-surface-container: var(--surface-container);
+  --color-on-surface-variant: var(--on-surface-variant);
+}
+
+:root {
+  --primary: #004c81;
+  --primary-container: #00355f;
+  --secondary: #0d9488;
+  --secondary-container: #ccfbf1;
+  --surface-container: #f1f5f9;
+  --on-surface-variant: #64748b;
+  color-scheme: light;
+}
+
+.dark {
+  --primary: #38bdf8;
+  --primary-container: #0b3154;
+  --secondary: #2dd4bf;
+  --secondary-container: #115e59;
+  --surface-container: #1e293b;
+  --on-surface-variant: #94a3b8;
+  color-scheme: dark;
+}
+
+

@@ -111,10 +111,10 @@ export const Hero: React.FC = () => {
         {/* Right Side: Immersive Bento Box Operatory Image */}
         <div className="lg:col-span-5 relative w-full h-[380px] md:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-gray-100/30" id="hero-bento-visual">
           <img 
-            alt="Modern Dental Clinic" 
+            alt="Warm and Welcoming Modern Dental Clinic Lobby" 
             referrerPolicy="no-referrer"
             className="absolute inset-0 w-full h-full object-cover select-none" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2VkQ0Y7kv0EypAtzML6jN2038-DKdRp6wqkmUWa5-KTtmdK-1J4B1rINtWvCkZpp0ZitQFZn-8im8Ycio6nxhvZ3yP1gDVcm_RjmBTHNYUsq7B3yZr0h7r5UCCj6IQXVFlAB1A9yMoVoVX36Y0EVYjDaGuyMFnfM0eAMqc2Xq2T0tuxezGsJ6Erwo1EDYWu0uW--Rdcty8IGf3k2B_MJEoVoL3Xzl23K8xobeey5-6ne0pFWxxrl3-yvPIPBx61WXqlvdEXY2OY"
+            src="/src/assets/images/welcoming_clinic_lobby_1780080195345.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent animate-pulse-slow" />
           

@@ -242,18 +242,7 @@ export const NotificationCenter: React.FC = () => {
                       </div>
                     )}
 
-                    <div className="mt-auto bg-blue-50/70 dark:bg-slate-900/40 border border-blue-100 dark:border-slate-800/80 p-4 rounded-xl text-center mt-6">
-                      <p className="text-xs text-blue-800 dark:text-blue-300 leading-normal">
-                        <strong>🔌 Real-Time SMTP API Active</strong>:<br />
-                        All appointments securely dispatch real-time backend notifications to the clinical admin at:
-                        <strong className="block select-all bg-white dark:bg-slate-950 py-1.5 px-3 rounded text-sm mt-1.5 border border-blue-200 dark:border-slate-800 text-primary dark:text-primary font-mono font-bold text-center">
-                          ayushchaudjary2001@gmail.com
-                        </strong>
-                        <span className="block mt-2 text-[10px] text-gray-500 dark:text-gray-400">
-                          (Provide your <code className="bg-slate-100 dark:bg-slate-800 px-1 rounded font-mono text-gray-700 dark:text-gray-300">SMTP_USER</code> and Gmail App Password under <code className="bg-slate-100 dark:bg-slate-800 px-1 rounded font-mono text-gray-700 dark:text-gray-300">SMTP_PASSWORD</code> in the workspace secrets to send real physical emails).
-                        </span>
-                      </p>
-                    </div>
+
                   </div>
                 )}
               </div>

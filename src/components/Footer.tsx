@@ -1,6 +1,24 @@
 import React from 'react';
 import { useClinic } from '../context/ClinicContext';
-import { Stethoscope } from 'lucide-react';
+import { Stethoscope, Facebook, Instagram } from 'lucide-react';
+
+const WhatsappIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+  </svg>
+);
 
 export const Footer: React.FC = () => {
   const { setSelectedView } = useClinic();
@@ -60,6 +78,37 @@ export const Footer: React.FC = () => {
           >
             Appointment Manager
           </button>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex items-center gap-5">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="text-blue-200 hover:text-white transition-colors hover:scale-110 transform duration-200"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.instagram.com/ayush_chaudhaarry/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-blue-200 hover:text-white transition-colors hover:scale-110 transform duration-200"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href="https://wa.me/917906480031"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="text-blue-200 hover:text-white transition-colors hover:scale-110 transform duration-200"
+          >
+            <WhatsappIcon className="w-5 h-5" />
+          </a>
         </div>
 
       </div>
